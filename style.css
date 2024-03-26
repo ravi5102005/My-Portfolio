@@ -1,0 +1,530 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap');
+*{
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html{
+    width:100%;
+    height:100%;
+}
+body{
+    min-width: 400px;
+    margin: 0;
+}
+header{
+    width:100%;
+    height:100vh;
+    background-image: url("Landing Page.svg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.Portfolio_title{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid ; */
+    width:100%;
+    top: 0;
+    left:0;
+    padding: 0em 1em;
+    background-color: rgb(255, 235, 221);
+    z-index: 2;
+}
+#menu{
+    position: absolute;
+    height: 90vh;
+    /* overflow: hidden; */
+    /* border: 1px solid rgb(124, 124, 124); */
+    top: 100%;
+    right: 0px;
+    font-size: 1.5em;
+    list-style-type: none;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 235, 221);
+    /* width:7.2%; */
+    width:250px;
+    transform: translateX(100%);
+    /*         250px                lllllllllllllllllllllllllllllllllllllllll */
+    /* filter: blur(0px); */
+}
+#menu ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+#menu li{
+    width:95%;
+    padding: 0.5em 1em;
+    /* border: 1px solid rgb(255, 255, 255); */
+    /* box-shadow: 1px 1px 2px  rgb(255, 129, 83); */
+    /* background-color: rgb(255, 214, 199); */
+    border-radius: 7px;
+    color: rgb(0, 0, 0);
+    margin: 1em 0.5em;
+    
+}
+#hamburger_menu{
+    position: absolute;
+    top:0;
+    left: 0%;
+    /* border: 1px solid rgb(255, 204, 168); */
+    height:100%;
+    /* background-color: rgba(199, 87, 87, 0); */
+    /* transform: translateX(-50%); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    transform: translatex(-90%);
+    /* background-color: rgb(255, 217, 189); */
+    /* color :white; */
+    /* overflow: visible; */
+}
+.menu_link{
+    color:black;
+    text-decoration: none;
+}
+#header_info{
+    font-size: 1.5em;
+    width:90%;
+    /* filter: blur(1px); */
+}
+.name{
+    font-size: 1em;
+    color:rgb(213, 67, 0);
+
+}
+.role_name1{
+    font-size: 1.7em;
+    padding: 0 0.7em;
+}
+.role_name2{
+    font-size: 1.7em;
+    padding: 0 1.5em;
+}
+#zoho_logo{
+    width:120px;
+    transition: 1s;
+}
+.my_words{
+   font-size: 0.8em;
+   /* margin-bottom: 1em; */
+}
+#social_links{
+    margin-bottom: 1em;
+}
+#my_header_img{
+    width:40%;
+    position: absolute;
+    top: 25%;
+    right:0;
+    z-index: 0;
+}
+
+
+
+
+
+#about_me_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(255, 251, 249); */
+}
+.about_me_heading{
+    padding-top: 0.7em;
+}
+.About_me_photo{
+    width:60%;
+    height:70vh;
+    background-size: cover;
+    background-image: url("ravi_png_.png");
+    background-position: center;
+    margin: auto;
+    /* background-color: antiquewhite; */
+}
+.my_info{
+    width:100%;
+    padding:0em 1em;
+    font-size: 1.2em;
+}
+.z{
+ color:rgb(255, 0, 0);
+}
+.o1{
+    color:green
+}
+.h{
+    color:rgb(0, 108, 197);
+}
+.o2{
+    color: rgb(224, 157, 0);
+}
+
+
+
+
+#project_page{
+    width:100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.project_title{
+    padding-bottom: 1em;
+}
+.project_box{
+    width:90%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+.project1_animation{
+    width: 100%;
+    height: 100%;
+}
+
+.project{
+    width:46%;
+    height:50%;
+    border: 1px solid rgb(160, 160, 160);
+    margin: 2%;
+    border-radius: 7px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.project1_animation::-webkit-media-controls {
+        display: none !important;
+    }
+    .project1_animation::-webkit-media-controls-play-button,
+    .project1_animation::-webkit-media-controls-start-playback-button {
+        display: none !important;
+    }
+.desc>h3{
+    width:100%;
+    text-align: center;
+    padding: 0.3em;
+    background-color: rgba(255, 228, 196, 0.608);
+    margin: 0;
+    white-space: nowrap;
+    
+    
+    /* position: absolute;
+    
+    bottom: 0%; */
+}
+.desc{
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    background-color:white;
+    transform: translateY(70%);
+    transition: 0.2s;
+    text-align: center;
+    /* text-overflow: ellipsis;
+    overflow: hidden; */
+    /* padding: 10px; */
+}
+.link>img{
+    width: 50px;
+}
+.project2{
+    transition: 0.2s;
+}
+.project:hover .desc{
+    transform: translateY(0%);
+}
+.project:hover :nth-child(1){
+    transform: translateY(-70%);
+}
+
+.project1{
+    width:96%;
+    height:40%;
+    overflow: hidden;
+    position: relative;
+}
+.foxy-learn-name{
+    width: 50%;
+    padding: 10px 0em;
+}
+/* .profect1_name{
+    width: 100%;
+    padding: 0.3em;
+    position: absolute;
+    bottom: 0;
+    background-color: antiquewhite;
+} */
+.small_project{
+    display: flex;
+    width:100%;
+    height:45%;
+   flex-wrap: wrap;
+}
+.project2{
+    background-image: url("todo_img.png");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+}
+.projectimg{
+    width: 100%;
+    height: 100%;
+}
+.project3{
+    background-image: url("calander_img.png");
+    background-position: center;
+    background-size: cover;
+}
+.project1{
+    /* background-image: url("foxy-learn.png"); */
+    background-position: top;
+    background-size: cover;
+}
+.project4{
+    background-image: url("quiz_img.png");
+    background-position: center;
+    background-size: cover;
+}
+.project5{
+    background-image: url("maze\ img.png");
+    background-position: top;
+    background-size: cover;
+}
+
+
+#Testimonials_page{
+    width:100%;
+    height:70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Testimonials_box{
+    width:90%;
+    height:50%;
+    border: 1px solid rgb(135, 135, 135);
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    position: relative;
+}
+.preson1_img{
+    width:20vh;
+    height:20vh;
+    border: 1px solid rgb(144, 144, 144);
+    transform: translateY(50%);
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+    border: 5px solid rgb(255, 224, 202);
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+}
+.comment{
+    width:85%;
+    height:50%;
+    font-size: 1.2em;
+    /* border: 1px solid; */
+    overflow-y: auto;
+    /* padding: 1em;
+    margin-bottom: 0.5em; */
+}
+.arrow{
+    border: 1px solid rgb(172, 172, 172);
+    padding: 0.5em;
+    width:50px;
+    border-radius: 50%;
+    background-color: rgb(255, 235, 221);
+    position: absolute;
+    /* border: 1px solid red; */
+    /* padding: 0.1em; */
+}
+#right_arrow{
+    top:40%;
+    right:0;
+    transform: translateX(30%);
+    z-index: 1;
+    /* transition: 1s; */
+}
+#left_arrow{
+    top:40%;
+    left:0;
+    transform: translateX(-40%);
+    display: none;
+}
+.Testimonial_person_name,.Testimonial_person_work{
+    width:100%;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0;
+}
+.Testimonial_person_name{
+    margin-top: 100px;
+
+}
+
+
+
+.my_contact_page{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* height: fit-content; */
+    /* border: 1px solid ; */
+    padding-bottom: 5rem;
+    /* border: 1px dotted green; */
+    /* transform: rotate(45deg) */
+}
+.my_contact_page h2{
+    padding-bottom: 5rem;
+}
+.outer_contact{
+        /* width: fit-content;
+        height: fit-content; */
+        width: 270px;
+        height: 270px;
+        background-color: #ffffff;
+        border: 2px dotted #000;
+        border-width: 6px;
+        transform: rotate(45deg); /* Rotate the outer container */
+        /* margin: 50px; */
+        border-radius: 60px;
+
+}
+.mycontect{
+    /* padding: 1px */
+    width: 100%;
+    height: 100%;
+    transform: rotate(-45deg); /* Rotate the outer container */
+    /* margin: 50px; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.mycontect div{
+    padding: 5px 0px;
+    div{
+        padding-left: 8px;
+    }
+}
+.phone_number_box{
+    display: flex;
+    width: 100%;
+}
+.phone_number_box img{
+    width: 30px;
+    height: 30px;
+}
+.mail_box{
+    display: flex;
+    width: 100%;
+}
+.mail_box img{
+    width: 30px;
+    height: 25px;
+}
+.footer_disign{
+    width: 100%;
+    height: 30%;
+    /* border: 1px solid red; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(255, 235, 221);
+    z-index: -1;
+}
+footer{
+    position: relative;
+}
+#person_img{
+    background-image:url("sudhrasan.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+@media only screen and (min-width:450px){
+    .foxy-learn-name{
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width:820px){
+    .project_box{
+        flex-direction: row;
+        width:90%;
+        height:100%;
+    }
+    .project{
+        height: 100%;
+        margin: 0.4em;
+        width:43.4%
+    }
+    .project1{
+        height:95%;
+        margin: 0.4em;
+        width:50%;
+    }
+    #project_page{
+        height: 50vh;
+    }
+    .small_project{
+        height: 46%;
+        width:100%;
+        width:50%;
+        align-items: center;
+        justify-content: center;
+    }
+    .outer_contact{
+        width: 400px;
+        height: 400px;
+        font-size: 1.3rem;
+    }
+    .foxy-learn-name{
+        width: 50%;
+    }
+    body{
+        font-size: 1.1em;
+    }
+    .desc{
+        transform: translateY(65%);
+    }
+    .project:hover :nth-child(1){
+        transform: translateY(-80%);
+    }
+}
